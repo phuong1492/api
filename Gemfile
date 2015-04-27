@@ -17,9 +17,10 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
 #Api gems
 gem 'active_model_serializers'
+gem 'turbolinks'
+gem 'rails_12factor'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -48,6 +49,9 @@ gem 'compass-rails'
 gem 'furatto'
 gem 'font-awesome-rails'
 gem 'simple_form'
+group :production do
+    gem 'pg'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

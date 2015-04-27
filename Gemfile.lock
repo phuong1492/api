@@ -68,7 +68,7 @@ GEM
     factory_girl_rails (4.4.1)
       factory_girl (~> 4.4.0)
       railties (>= 3.0.0)
-    ffaker (1.24.0)
+    ffaker (2.0.0)
     font-awesome-rails (4.1.0.0)
       railties (>= 3.2, < 5.0)
     fssm (0.2.10)
@@ -93,6 +93,7 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.5.5)
     orm_adapter (0.5.0)
+    pg (0.18.2)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -105,6 +106,11 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.2)
       sprockets-rails (~> 2.0.0)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.4)
+    rails_stdout_logging (0.0.3)
     railties (4.0.2)
       actionpack (= 4.0.2)
       activesupport (= 4.0.2)
@@ -155,6 +161,8 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
+    turbolinks (2.5.3)
+      coffee-rails
     tzinfo (0.3.39)
     uglifier (2.5.1)
       execjs (>= 0.3.0)
@@ -175,7 +183,9 @@ DEPENDENCIES
   font-awesome-rails
   furatto
   jquery-rails
+  pg
   rails (= 4.0.2)
+  rails_12factor
   rspec-rails
   sabisu_rails!
   sass-rails (~> 4.0.0)
@@ -183,4 +193,5 @@ DEPENDENCIES
   shoulda-matchers
   simple_form
   sqlite3
+  turbolinks
   uglifier (>= 1.3.0)
